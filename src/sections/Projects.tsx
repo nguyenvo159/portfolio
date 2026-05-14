@@ -50,10 +50,10 @@ export default function Projects() {
               {/* Image */}
               <div className="w-full md:w-3/5 relative overflow-hidden rounded-2xl aspect-video glass">
                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 mix-blend-overlay"></div>
-                <motion.img 
+                <motion.img
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.7 }}
-                  src={project.image} 
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover rounded-2xl"
                 />
@@ -76,9 +76,9 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-4 pt-6">
-                  <a href={project.links.live} className="flex items-center justify-center px-6 py-3 bg-foreground text-background hover:bg-foreground/90 transition-colors rounded-full font-medium">
+                  {/* <a href={project.links.live} className="flex items-center justify-center px-6 py-3 bg-foreground text-background hover:bg-foreground/90 transition-colors rounded-full font-medium">
                     Live Demo <ExternalLink className="w-4 h-4 ml-2" />
-                  </a>
+                  </a> */}
                   <a href={project.links.github} className="flex items-center justify-center p-3 border border-border hover:bg-muted transition-colors rounded-full glass">
                     <Github className="w-5 h-5" />
                   </a>
