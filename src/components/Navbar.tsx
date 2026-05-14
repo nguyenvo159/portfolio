@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from './ThemeProvider';
-import { Moon, Sun, Menu, X, Github, Linkedin, Twitter } from 'lucide-react';
+import { Moon, Sun, Menu, X, Github, Linkedin } from 'lucide-react';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
